@@ -1,7 +1,7 @@
 require "rspec_json_schema_matcher/version"
 
-require 'rspec'
-require 'rspec/expectations'
+# require 'rspec'
+# require 'rspec/expectations'
 require 'json-schema'
 
 # Validates JSON responses against a schema
