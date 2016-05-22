@@ -9,7 +9,7 @@ RSpec::Matchers.define :match_schema do |schema|
   match do |body|
     schema_directory = "#{Dir.pwd}/spec/support/schemas"
     schema_path = "#{schema_directory}/#{schema}.json"
-    opts = { validate_schema: true }
+    opts = { :validate_schema=> true }
 
     begin
       @result = JSON::Validator.fully_validate_json(schema_path, body, opts)
